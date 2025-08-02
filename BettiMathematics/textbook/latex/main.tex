@@ -1,0 +1,141 @@
+\documentclass[12pt,a4paper]{book}
+
+% Required packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{titlesec}
+
+% Page geometry
+\geometry{margin=1in}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Betti Mathematics: Ontological Compression through Recursive Symbolic Codex},
+    pdfauthor={Gregory Betti},
+    pdfsubject={Theoretical Mathematical Framework},
+    pdfkeywords={Mathematics, Ontological Compression, Recursive Symbolic Codex, Theoretical Framework}
+}
+
+% Code listing setup
+\lstset{
+    backgroundcolor=\color{gray!10},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    captionpos=b,
+    commentstyle=\color{green!50!black},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    showstringspaces=false,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{gray}
+}
+
+% Custom theorem environments
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}[theorem]{Example}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\rightmark}
+\fancyhead[RE]{\leftmark}
+
+% Title page
+\title{
+    \Huge\textbf{Betti Mathematics:} \\
+    \Large\textbf{Ontological Compression through} \\
+    \Large\textbf{Recursive Symbolic Codex} \\
+    \vspace{1cm}
+    \large\textit{A Speculative Theoretical Framework}
+}
+
+\author{
+    \Large Gregory Betti \\
+    \normalsize Founder, Betti Labs \\
+    \normalsize \href{https://github.com/Betti-Labs}{GitHub: https://github.com/Betti-Labs}
+}
+
+\date{August 2025}
+
+\begin{document}
+
+% Title page
+\maketitle
+
+% Academic disclaimer page
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\textbf{\Large IMPORTANT ACADEMIC DISCLAIMER}
+\end{center}
+\vspace{1cm}
+
+\textbf{This project presents a speculative theoretical mathematical framework.} "Betti Mathematics" is a proposed mathematical system that extends beyond established mathematical foundations. While grounded in legitimate academic research and existing mathematical precedents, this framework represents theoretical exploration rather than empirically validated mathematics.
+
+\vspace{0.5cm}
+
+\textbf{Academic Positioning}: This work follows precedents in theoretical physics where speculative mathematical frameworks are developed to explore potential new understanding. All theoretical constructs presented herein require extensive validation and should be understood as proposed rather than established mathematics.
+
+\vspace{0.5cm}
+
+\textbf{Research Status}: This framework is in active research and development phase. All mathematical constructs, algorithms, and theoretical propositions should be considered as hypothetical pending rigorous peer review and empirical validation.
+
+\vspace{0.5cm}
+
+\textbf{Intended Audience}: This work is intended for researchers, mathematicians, and theorists interested in exploring novel mathematical frameworks and their potential applications.
+
+\vspace*{\fill}
+
+% Table of contents
+\newpage
+\tableofcontents
+
+% List of figures (if any)
+\listoffigures
+
+% Main content - include all chapters
+\mainmatter
+
+% Include README as introduction
+\input{README.tex}
+
+% Include all chapters
+\input{Chapter_0_Preface.tex}
+\input{Chapter_1_Collapse_Expansion.tex}
+\input{Chapter_2_Recursive_Symbolic_Codex.tex}
+\input{Chapter_3_Ontological_Structures.tex}
+\input{Chapter_4_Compression_Algorithms.tex}
+\input{Chapter_5_Mathematical_Foundations.tex}
+\input{Chapter_6_Theoretical_Applications.tex}
+\input{Chapter_7_Validation_Methods.tex}
+\input{Chapter_8_Advanced_Topics.tex}
+\input{Chapter_9_Future_Directions.tex}
+
+% Bibliography (placeholder for future references)
+\backmatter
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
