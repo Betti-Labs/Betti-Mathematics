@@ -1,8 +1,8 @@
-name: Deploy to GitHub Pages
+name: Deploy Betti Mathematics to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   workflow_dispatch:
 
 permissions:
@@ -28,10 +28,9 @@ jobs:
         uses: actions/configure-pages@v5
         
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
-          path: './docs'
+          path: '.'
           
       - name: Deploy to GitHub Pages
         id: deployment
