@@ -24,6 +24,10 @@ function App() {
       </nav>
 
       {view === 'demo' ? <ParticleCollapse /> : <Verification />}
+
+      <div className="fixed bottom-2 right-2 text-xs text-gray-600 pointer-events-none">
+        v2.0 (3D Enabled)
+      </div>
     </div>
   )
 }
