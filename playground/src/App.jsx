@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ParticleCollapse from './ParticleCollapse'
+import CosmicTorus from './CosmicTorus'
 import Verification from './Verification'
 import './App.css'
 
@@ -13,7 +13,7 @@ function App() {
           onClick={() => setView('demo')}
           className={`px-4 py-2 rounded-full text-sm font-bold transition-colors ${view === 'demo' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-gray-700'}`}
         >
-          3D Visualization
+          Cosmic Visualization
         </button>
         <button
           onClick={() => setView('verify')}
@@ -23,10 +23,10 @@ function App() {
         </button>
       </nav>
 
-      {view === 'demo' ? <ParticleCollapse /> : <Verification />}
+      {view === 'demo' ? <CosmicTorus /> : <Verification />}
 
       <div className="fixed bottom-2 right-2 text-xs text-gray-600 pointer-events-none">
-        v2.0 (3D Enabled)
+        v3.0 (Cosmic Torus)
       </div>
     </div>
   )
