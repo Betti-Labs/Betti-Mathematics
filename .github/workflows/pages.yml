@@ -16,6 +16,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    - name: Build Playground
+      run: |
+        cd playground
+        npm ci
+        npm run build
+        cp -r dist/* ./
+        rm -rf dist
+        cd ..
     - name: Setup Pages
       uses: actions/configure-pages@v5
     - name: Prepare for deployment
