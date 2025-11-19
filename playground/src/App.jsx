@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import FractalCollapse from './FractalCollapse'
+import ParticleCollapse from './ParticleCollapse'
 import Verification from './Verification'
 import './App.css'
 
@@ -13,7 +13,7 @@ function App() {
           onClick={() => setView('demo')}
           className={`px-4 py-2 rounded-full text-sm font-bold transition-colors ${view === 'demo' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-gray-700'}`}
         >
-          Demo
+          3D Visualization
         </button>
         <button
           onClick={() => setView('verify')}
@@ -23,7 +23,7 @@ function App() {
         </button>
       </nav>
 
-      {view === 'demo' ? <FractalCollapse /> : <Verification />}
+      {view === 'demo' ? <ParticleCollapse /> : <Verification />}
     </div>
   )
 }
